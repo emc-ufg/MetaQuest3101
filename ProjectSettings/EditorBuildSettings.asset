@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: "Assets/Samples/Meta XR Interaction \u200BSDK/68.0.1/Example Scenes/ConcurrentHandsControllersExamples.unity"
+    guid: 10824ac1a08b9a0459de4c071e1db2aa
+  - enabled: 0
+    path: Assets/Scenes/buildingblocks.unity
+    guid: 396a3d66d20372640ac64f73e1569a39
+  - enabled: 0
+    path: "Assets/Samples/Meta XR Interaction \u200BSDK/68.0.1/Example Scenes/TransformerExamples.unity"
+    guid: 7475942f60c376744ba1ec487d140105
+  - enabled: 0
+    path: Assets/Scenes/sceneEMC.unity
+    guid: 1369a78e2f9f063469a6e2bcb143d21e
+  - enabled: 0
+    path: Assets/Scenes/templateLocomotion.unity
+    guid: 1af7cff3111db644d80d25df9f4396c2
+  - enabled: 0
+    path: Assets/Scenes/GettingStartedwithControllerInputandTracking.unity
+    guid: 19dc8ae6769eda244a34df41318b39b2
+  - enabled: 1
+    path: Assets/Scenes/WhiteBoard.unity
+    guid: fcde9b36f0c16e14cb263cc3751e3fd1
+  - enabled: 0
+    path: "Assets/Samples/Meta XR Interaction \u200BSDK/68.0.1/Example Scenes/PanelWithManipulators.unity"
+    guid: bafd0df297556dd44832193b22fca1ae
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94b11335cd8e53b4292355f0205111ef, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c1d3c50aecdf8304d8667499967905d3, type: 2}
+  m_UseUCBPForAssetBundles: 0
