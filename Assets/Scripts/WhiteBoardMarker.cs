@@ -12,7 +12,7 @@ public class WhiteBoardMarker : MonoBehaviour
     [SerializeField] private int _penSize = 5;
 
     private Renderer _renderer;
-    private Color[] _colors;
+    private Color32[] _colors;
     private float _tipHeight;
 
     private RaycastHit _touch;
@@ -24,7 +24,8 @@ public class WhiteBoardMarker : MonoBehaviour
     void Start()
     {
         _renderer = _tip.GetComponent<Renderer>();
-        _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
+        Color32 _color32 = _renderer.material.color;
+        _colors = Enumerable.Repeat(_color32, _penSize * _penSize).ToArray();
         _tipHeight = _tip.localScale.y;
     }
 
@@ -36,8 +37,10 @@ public class WhiteBoardMarker : MonoBehaviour
     private void Draw()
     {
         if (Physics.Raycast(_tip.position, transform.up, out _touch, _tipHeight))
-        {
-            if (_touch.transform.CompareTag("Whiteboard"))
+        //if (Physics.Raycast(_tip.position, transform.up, out _touch, 0.05f))
+
+            {
+                if (_touch.transform.CompareTag("Whiteboard"))
             {
                 if (_whiteboard == null)
                 {
@@ -53,13 +56,13 @@ public class WhiteBoardMarker : MonoBehaviour
 
                 if (_touchedLastFrame)
                 {
-                    _whiteboard.texture.SetPixels(x, y, _penSize, _penSize, _colors);
+                    _whiteboard.texture.SetPixels32(x, y, _penSize, _penSize, _colors);
 
                     for (float f = 0.01f; f < 1.00f; f += 0.01f)
                     {
                         var lerpX = (int)Mathf.Lerp(_lastTouchPos.x, x, f);
                         var lerpY = (int)Mathf.Lerp(_lastTouchPos.y, y, f);
-                        _whiteboard.texture.SetPixels(lerpX, lerpY, _penSize, _penSize, _colors);
+                        _whiteboard.texture.SetPixels32(lerpX, lerpY, _penSize, _penSize, _colors);
                     }
 
                     transform.rotation = _lastTouchRot;
