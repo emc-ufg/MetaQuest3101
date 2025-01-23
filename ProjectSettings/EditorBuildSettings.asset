@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Samples/Meta XR Interaction \u200BSDK/68.0.1/Example Scenes/PanelWithManipulators.unity"
     guid: bafd0df297556dd44832193b22fca1ae
+  - enabled: 0
+    path: Assets/Scenes/locomotionPersonal.unity
+    guid: b6166fec8f8534e4eaf364f9c2332fd8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94b11335cd8e53b4292355f0205111ef, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c1d3c50aecdf8304d8667499967905d3, type: 2}

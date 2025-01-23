@@ -588,6 +588,10 @@ PrefabInstance:
       value: LocomotionEnvironment
       objectReference: {fileID: 0}
     - target: {fileID: 5837592159730691640, guid: 9ea3c3bd7f7fe1043a0bb52ecda39ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837592159730691640, guid: 9ea3c3bd7f7fe1043a0bb52ecda39ce6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 119
       objectReference: {fileID: 0}
@@ -14501,6 +14505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExamplesMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 9086217882881612365, guid: f5919696adaee8d4486feba592fbc854, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9086217882881612367, guid: f5919696adaee8d4486feba592fbc854, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15564,7 +15572,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.033333335
+  m_VoxelSize: 0.13
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 3c5f28d4801b36744961bf4c1bcacab8, type: 2}
   m_BuildHeightMesh: 1
